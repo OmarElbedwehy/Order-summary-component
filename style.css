@@ -78,6 +78,7 @@ main{
 
 .card .music a:hover{
   color: hsl(245deg 61% 68%);
+  text-decoration:  none;
 }
 
 .card .button{
@@ -120,6 +121,7 @@ footer{
 footer a{
   color: #0000ff;
   transition: 0.3s;
+  text-align: center;
 }
 
 footer a:hover{
@@ -127,10 +129,20 @@ footer a:hover{
 }
 
 @media (max-width: 768px) {
-  .card{
-    height: 625px;
-  }
   body{
     background-image: url(images/pattern-mobile-desktop.svg);
+  }
+  .card .music{
+    margin-top: 20px;
+  }
+  footer{
+    width: 100%;
+    position: relative;
+    left: -30px;
+    margin-top: 20px;
+  }
+  footer .text{
+    line-height: 25px;
+    text-align: center;
   }
 }
